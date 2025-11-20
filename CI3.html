@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: 180px 1fr 200px;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "menu header sidebar"
+        "menu content sidebar"
+        "menu footer sidebar";
+      gap: 10px;
+      padding: 10px;
+    }
+
+    #menu {
+      grid-area: menu;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-right: 2px solid #ccc;
+    }
+
+    #header {
+      grid-area: header;
+      background-color: #90ee90; /* Light green */
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+    }
+
+    #content {
+      grid-area: content;
+      background-color: #90ee90; /* Light green */
+      padding: 10px;
+      border: 1px solid #66cc66;
+    }
+
+    #sidebar {
+      grid-area: sidebar;
+      background-color: #3399ff;
+      color: white;
+      padding: 10px;
+      border-left: 2px solid #007acc;
+    }
+
+    #footer {
+      grid-area: footer;
+      background-color: #d3d3d3;
+      padding: 10px;
+      border-top: 2px solid #bbb;
+    }
+
+    .button {
+      display: block;
+      margin: 6px 0;
+      padding: 8px;
+      background-color: #e6e6e6;
+      border: 1px solid #999;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #ccc;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="menu">
+      <p><strong>Use the menu to select different Stylesheets</strong></p>
+      <a href="#" class="button">Stylesheet 1</a>
+      <a href="#" class="button">Stylesheet 2</a>
+      <a href="#" class="button">Stylesheet 3</a>
+      <a href="#" class="button">Stylesheet 4</a>
+      <a href="#" class="button">No Stylesheet</a>
+    </div>
+
+    <div id="header">Welcome to My Homepage</div>
+
+    <div id="content">
+      <h2>Same Page Different Stylesheets</h2>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+      <p>
+        <a href="#">Stylesheet1</a>,
+        <a href="#">Stylesheet2</a>,
+        <a href="#">Stylesheet3</a>,
+        <a href="#">Stylesheet4</a>
+      </p>
+      <h3>No Styles</h3>
+      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+      <p><a href="#">No Stylesheet</a></p>
+    </div>
+
+    <div id="sidebar">
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <div id="footer">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+    </div>
+  </div>
+</body>
+</html>
