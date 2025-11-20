@@ -1,169 +1,255 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Campus Chronicle</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #1a1a1a;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-    nav ul li {
-      margin: 0 10px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    main {
-      display: flex;
-      margin-top: 20px;
-    }
-    section {
-      flex: 2;
-      margin-right: 20px;
-    }
-    article {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    article h2 {
-      color: #1a1a1a;
-      font-size: 1.8em;
-    }
-    aside {
-      flex: 1;
-      background-color: #e6e6e6;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    figure {
-      margin: 0;
-      text-align: center;
-    }
-    figure img {
-      max-width: 100%;
-      height: auto;
-    }
-    figcaption {
-      font-style: italic;
-      color: #666;
-      font-size: 0.9em;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    footer {
-      background-color: #1a1a1a;
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
 
-  <header>
-    <h1>Campus Chronicle</h1>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Academics</a></li>
-      <li><a href="#">Research</a></li>
-      <li><a href="#">Sports</a></li>
-      <li><a href="#">Culture</a></li>
-    </ul>
-  </nav>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <main>
-    <section>
-      <article>
-        <h2>Breakthrough in Student Research</h2>
-        <p>Engineering students at our college have developed a prototype quantum processor, marking a major milestone in campus innovation.</p>
-        <figure>
-          <img src="https://www.gulla.net/contentassets/93ea165fffdd4657aee0f7e0a494bfa8/quantum-computing.jpg" alt="Quantum Computer">
-          <figcaption>A quantum computing exhibit similar to the student prototype</figcaption>
-        </figure>
-      </article>
+    <title>The Daily Chronicle</title>
 
-      <article>
-        <h2>College Football Team Wins State Championship</h2>
-        <p>In a nail-biting finale, our college team triumphed in the state-level championship, igniting celebrations across campus.</p>
-        <table>
-          <tr>
-            <th>Team</th>
-            <th>Score</th>
-          </tr>
-          <tr>
-            <td>Campus Titans</td>
-            <td>28</td>
-          </tr>
-          <tr>
-            <td>Rival Raiders</td>
-            <td>24</td>
-          </tr>
-        </table>
-      </article>
-    </section>
+    <style>
+      body {
+        font-family: "Georgia", serif;
 
-    <aside>
-      <h3>Weather Update</h3>
-      <p>Sunny skies expected with a high of 75°F (24°C) today.</p>
-      <h3>Upcoming Events</h3>
+        line-height: 1.6;
+
+        color: #333;
+
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        padding: 20px;
+
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #1a1a1a;
+
+        color: #fff;
+
+        padding: 20px;
+
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+
+        font-size: 2.5cm;
+      }
+
+      nav {
+        background-color: #333;
+
+        color: #fff;
+
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+
+        padding: 0;
+
+        margin: 0;
+
+        display: flex;
+
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+
+        text-decoration: none;
+      }
+
+      main {
+        display: flex;
+
+        margin-top: 20px;
+      }
+
+      section {
+        flex: 2;
+
+        margin-right: 20px;
+      }
+
+      article {
+        background-color: #fff;
+
+        padding: 20px;
+
+        margin-bottom: 20px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      article h2 {
+        color: #1a1a1a;
+
+        font-size: 1.8em;
+      }
+
+      aside {
+        flex: 1;
+
+        background-color: #e6e6e6;
+
+        padding: 20px;
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      figure {
+        margin: 0;
+
+        text-align: center;
+      }
+
+      figure img {
+        max-width: 100%;
+
+        height: auto;
+      }
+
+      Figure caption {
+        font-style: italic;
+
+        color: #666;
+
+        font-size: 0.9cm;
+      }
+
+      table {
+        width: 100%;
+
+        border-collapse: collapse;
+
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+
+        padding: 10px;
+
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      footer {
+        background-color: #1a1a1a;
+
+        color: #fff;
+
+        padding: 10px;
+
+        text-align: center;
+
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>SMVITM</h1>
+    </header>
+
+    <nav>
       <ul>
-        <li>College Fest – This Weekend</li>
-        <li>Research Symposium – Next Month</li>
-        <li>Alumni Meet – In Two Weeks</li>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Technology</a></li>
+
+        <li><a href="#">Sports</a></li>
+
+        <li><a href="#">Entertainment</a></li>
       </ul>
-    </aside>
-  </main>
+    </nav>
 
-  <footer>
-    <p>&copy; 2023 Campus Chronicle. All rights reserved.</p>
-  </footer>
+    <main>
+      <section>
+        <article>
+          <h2>Breaking News:WE ARE AUTONOMUS NOW</h2>
 
-</body>
+          <p>
+            The University Grants Commission (UGC), New Delhi, after evaluating
+            the academic quality of the institute and upon the recommendation of
+            the Higher Education Council, Government of Karnataka and
+            Visvesvaraya Technological University, Belagavi, has granted SMVITM
+            autonomous status for 10 years, effective from the academic year
+            2025–26.
+          </p>
+
+          <figure>
+            <img
+              src="https://sode-edu.in/wp-content/uploads/2020/08/smvitm-banner1-min.jpg"
+              alt="SMVITM"
+            />
+
+            <figcaption>The college campus of SMVITM</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h2>Table Tennis Team Wins Championship</h2>
+
+          <p>
+            In a thrilling match,our college team secured victory in the
+            national championship,bringing pride to our college.
+          </p>
+
+          <table>
+            <tr>
+              <th>Team</th>
+
+              <th>Score</th>
+            </tr>
+
+            <tr>
+              <td>College Team</td>
+
+              <td>3</td>
+            </tr>
+
+            <tr>
+              <td>Other college compitator</td>
+
+              <td>2</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+
+      <aside>
+        <h3>Upcoming Event</h3>
+
+        <ul>
+          <li>College fest-This Weekend</li>
+
+          <li>Hackothsav-Next month</li>
+
+          <li>Graduation ceremony-In two weeks</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy;2027 The Daily Chronicle.All rights reserved</p>
+    </footer>
+  </body>
 </html>
-
-

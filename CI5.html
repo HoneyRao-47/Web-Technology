@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> SMVITM Registration Form</title>
+<style>
+body{
+font-family:Ariel, sans-serif;
+background-color:#F5F5DC;
+margin:20px;
+}
+h1{
+text-align:center;
+color:black;
+font-size:32px;
+margin-bottom:20px;
+}
+table{
+width:60%;
+margin:0 auto;
+background-color:#F5F5DC;
+border-collapse:collapse;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+td{
+padding:15px;
+font-size:18px;
+color:#555;
+}
+th{
+text-align:left;
+padding:15px;
+background-color:#8FBC8F;
+color:white;
+sont-size:20px;
+}
+input[type="text"],input[type="email"],input[type="password"],select,textarea{
+width:90%;
+padding:10px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+input[type="submit"],input[type="reset"]{
+background-color:#8FBC8F;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:4px;
+cursor:pointer;
+font-size:18px;
+}
+input[type="submit"]:hover, input[type="reset"]: hover{
+background-color:#8FBC8F;
+}
+textarea{
+resize:vertical;
+height:100px;
+}
+.radio,.checkbox{
+width:auto;
+}
+</style>
+</head>
+<body>
+<h1> Event Registration Form</h1>
+<form action="#" method="post">
+<table>
+<tr>
+<th colspan="2"> Personal Information </th>
+</tr>
+<tr>
+<td> First name:</td>
+<td> <input type="text" name="firstname" placeholder="Enter your first name"></td>
+</tr>
+<tr>
+<td> Last name:</td>
+<td> <input type="text" name="lastname" placeholder="Enter your last name"></td>
+</tr>
+<tr>
+<td> USN:</td>
+<td> <input type="text" name="usn" placeholder="Enter your USN"></td>
+</tr>
+<tr>
+<td> Collage Email:</td>
+<td> <input type="email" name="email" placeholder="Enter your email"> </td>
+</tr>
+<tr>
+<td> Password:</td>
+<td><input type="password" name="password" placeholder="Enter your password"></td>
+</tr>
+<tr>
+<td> Gender:</td>
+<td> <input type="radio" name="gender" value="male" class ="radio"> Male
+<input type="radio" name="gender" value="female" class ="radio"> Female
+</td>
+</tr>
+<tr>
+<td> Department:</td>
+<td>
+<select name="department">
+<option value="cse"> CSE</option>
+<option value="ece"> ECE</option>
+<option value="aiml"> AIML</option>
+<option value="aids">AIDS </option>
+<option value="mech/civil">Mechanical/Civil</option>
+</select>
+</td>
+</tr>
+<tr>
+<td> Participating Events:</td>
+<td><input type="checkbox" name="events" value="hackathon" class="checkbox"> Hackathon
+<input type="checkbox" name="events" value="squidhunt" class="checkbox"> Squid Hunt
+<input type="checkbox" name="events" value="hackhunt" class="checkbox"> Hack Hunt
+<input type="checkbox" name="events" value="melodychain" class="checkbox"> Melody Chain
+</td>
+</tr>
+<tr>
+<td> Fees paid:</td>
+<td> <input type="radio" name="fees" value="yes" class ="radio"> Yes
+<input type="radio" name="fees" value="No" class ="radio"> No
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center;">
+<input type ="submit" value="Register">
+<input type ="reset" value="reset">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
